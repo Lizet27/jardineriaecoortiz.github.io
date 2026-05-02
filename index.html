@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Jardinería EcoOrtiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- <a href="https://wa.me/51997468890?text=Hola%20quiero%20información" target="_blank"></a> -->
+</head>
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo Eco Ortiz">
+            </div>
+
+        <h3>ENTRA EN CONTACTO</h3>
+        <p>
+             <a href="https://wa.me/51997468890" target="_blank">
+             <i class="fab fa-whatsapp"></i> +51997468890
+             </a>
+        </p>
+
+            <!-- LLAMADA -->
+        <p>
+            <a href="tel:+51980041926">
+                <i class="fas fa-phone"></i> +51980041926
+            </a>
+        </p>
+
+            <!-- INSTAGRAM -->
+        <p>
+            <a href="https://instagram.com/jardineriaecoortiz" target="_blank">
+                <i class="fab fa-instagram"></i> @jardineriaecoortiz
+            </a>
+        </p>
+
+            <!-- EMAIL -->
+        <p>
+            <a href="mailto:jardineriaecoortiz@gmail.com">
+                <i class="fas fa-envelope"></i> jardineriaecoortiz@gmail.com
+            </a>
+        </p>
+
+                <!-- UBICACIÓN (GOOGLE MAPS) -->
+            <p>
+                <a href="https://www.google.com/maps/search/?api=1&query=Surco+Lima+Peru" target="_blank">
+                    <i class="fas fa-map-marker-alt"></i> Surco
+                </a>
+            </p>
+            <h3>CATEGORÍAS</h3>
+                <ul>
+                    <li onclick="filtrar('inicio')">Inicio</li>
+                    <li onclick="filtrar('promocion')">Promoción</li>
+                    <li onclick="filtrar('plantas')">Plantas Interior</li>
+                    <li onclick="filtrar('mantenimiento')">Mantenimiento</li>
+                </ul>
+    </aside>
+
+    <!-- CONTENIDO -->
+<div class="contenido">
+    
+        <!-- PORTADA -->
+        <div class="portada" id="portada">
+            <img src="images/portada.png" alt="Portada Jardinería">
+        </div>
+
+         <!-- MAIN -->
+    <main class="main">
+
+        <!-- MENU -->
+        <nav class="menu">
+            <button class="btn active" onclick="filtrar('inicio',this)">INICIO</button>
+            <button class="btn" onclick="filtrar('promocion',this)">PROMOCION</button>
+            <button class="btn" onclick="filtrar('plantas',this)">PLANTAS INTERIOR</button>
+            <button class="btn" onclick="filtrar('mantenimiento',this)">MANTENIMIENTO</button>
+        </nav>
+
+        <!-- PROMOCIONES -->
+        <section id="promocion" class="seccion">
+            <h2>Promoción</h2>
+
+            <div class="grid">
+
+                <div class="card" onclick="verDetalle(
+                    'images/Combo1.png',
+                    'PROMOCION',
+                    'COMBO BÁSICO – INICIO VERDE',
+                    'S/ 15.90',
+                    `Ideal para iniciar en jardinería 🌱<br><br>
+                        Mejora el crecimiento desde la raíz y mantiene tus plantas sanas por más tiempo.<br>
+                        Perfecto para departamentos y espacios pequeños.<br><br>
+
+                            <ul>
+                            <li>Fácil de usar</li>
+                            <li>Ideal para principiantes</li>
+                            <li>Mejora el crecimiento</li>
+                            <li>Producto natural</li>
+                            </ul>`
+                                                    )">
+                    <img src="images/Combo1.png">
+                    <p>COMBO BÁSICO – "INICIO VERDE"</p>
+                    <span>S/ 15.90</span>
+                </div>
+
+                <div class="card" onclick="verDetalle(
+                    'images/Combo2.png',
+                    'PROMOCION',
+                    'COMBO HOGAR – PLANTAS SANAS',
+                    'S/ 24.90',
+                    `Ideal para iniciar en jardinería 🌱<br><br>
+                        Mejora el crecimiento desde la raíz y mantiene tus plantas sanas por más tiempo.<br>
+                        Perfecto para departamentos y espacios pequeños.<br><br>
+
+                            <ul>
+                            <li>Fácil de usar</li>
+                            <li>Ideal para principiantes</li>
+                            <li>Mejora el crecimiento</li>
+                            <li>Producto natural</li>
+                            </ul>`
+                                                    )">
+                    <img src="images/Combo2.png">
+                    <p>COMBO HOGAR – "PLANTAS SANAS"</p>
+                    <span>S/ 24.90</span>
+                </div>
+
+                <div class="card" onclick="verDetalle(
+                    'images/Combo2.png',
+                    'PROMOCION',
+                    'COMBO PREMIUM – CRECIMIENTO PRO',
+                    'S/ 34.90',
+                    `Ideal para iniciar en jardinería 🌱<br><br>
+                        Mejora el crecimiento desde la raíz y mantiene tus plantas sanas por más tiempo.<br>
+                        Perfecto para departamentos y espacios pequeños.<br><br>
+
+                            <ul>
+                            <li>Fácil de usar</li>
+                            <li>Ideal para principiantes</li>
+                            <li>Mejora el crecimiento</li>
+                            <li>Producto natural</li>
+                            </ul>`
+                                                    )">
+                    <img src="images/combo3.png">
+                    <p>COMBO PREMIUM – "CRECIMIENTO PRO"</p>
+                    <span>S/ 34.90</span>
+                </div>
+
+                <div class="card" onclick="verDetalle(
+                    'images/Combo2.png',
+                    'PROMOCION',
+                    'COMBO COMPLETO – KIT JARDINERO',
+                    'S/ 49.90',
+                    `Ideal para iniciar en jardinería 🌱<br><br>
+                        Mejora el crecimiento desde la raíz y mantiene tus plantas sanas por más tiempo.<br>
+                        Perfecto para departamentos y espacios pequeños.<br><br>
+
+                            <ul>
+                            <li>Fácil de usar</li>
+                            <li>Ideal para principiantes</li>
+                            <li>Mejora el crecimiento</li>
+                            <li>Producto natural</li>
+                            </ul>`
+                                                    )">
+                    <img src="images/combo4.png">
+                    <p>COMBO COMPLETO – "KIT JARDINERO"</p>
+                    <span>S/ 49.90</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PLANTAS -->
+        <section id="plantas" class="seccion">
+            <h2>Plantas Interior</h2>
+
+            <div class="grid">
+
+                <div class="card">
+                    <img src="images/Anthuriumrojo.png">
+                    <p>Anthurium Rojo</p>
+                    <span>S/ 150.00</span>
+                </div>
+
+                <div class="card">
+                    <img src="images/LiriodePaz.png">
+                    <p>Lirio de la paz</p>
+                    <span>S/ 220.00</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- MANTENIMIENTO -->
+        <section id="mantenimiento" class="seccion">
+            <h2>Mantenimiento</h2>
+
+            <div class="grid">
+
+                <div class="card">
+                    <img src="images/mantenimiento3.png">
+                    <p>Jardín Grande</p>
+                    <span>S/ 300.00</span>
+                </div>
+
+                <div class="card">
+                    <img src="images/mantenimiento2.png">
+                    <p>Jardín Mediano</p>
+                    <span>S/ 150.00</span>
+                </div>
+
+                <div class="card">
+                    <img src="images/mantenimiento1.png">
+                    <p>Jardín Pequeño</p>
+                    <span>S/ 80.00</span>
+                </div>
+
+            </div>
+        </section>
+
+            <div id="detalle" style="display:none;">
+
+                <div class="detalle-container">
+
+                <img id="detalle-img" src="">
+
+                <div class="detalle-info">
+                    <small id="detalle-categoria"></small>
+                    <h2 id="detalle-titulo"></h2>
+                    <h3 id="detalle-precio"></h3>
+
+                    <a id="btn-whatsapp" target="_blank" class="btn-wsp">
+                        <i class="fab fa-whatsapp"></i> Enviar un mensaje por WhatsApp
+                    </a>
+
+                    <h4>DESCRIPCIÓN</h4>
+                    <div id="detalle-desc"></div>
+                </div>
+
+                </div>
+
+            </div>
+
+
+    </main>
+
+</div>
+
+
+<script>
+// =======================
+// FILTRAR CATEGORÍAS
+// =======================
+
+function filtrar(categoria, btn) {
+
+    let secciones = document.querySelectorAll(".seccion");
+    let botones = document.querySelectorAll(".btn");
+
+    botones.forEach(b => b.classList.remove("active"));
+    if (btn) btn.classList.add("active");
+
+    document.getElementById("portada").style.display = "block";
+    document.getElementById("detalle").style.display = "none";
+
+    secciones.forEach(sec => {
+        if (categoria === "inicio") {
+            sec.style.display = "block";
+        } else {
+            sec.style.display = (sec.id === categoria) ? "block" : "none";
+        }
+    });
+}   
+
+
+// =======================
+// VER DETALLE PRODUCTO
+// =======================
+function verDetalle(img, categoria, titulo, precio, descripcion) {
+
+    // ocultar secciones
+    document.querySelectorAll(".seccion").forEach(sec => {
+        sec.style.display = "none";
+    });
+
+    // 🔥 ocultar portada
+    document.getElementById("portada").style.display = "none";
+
+    // mostrar detalle
+    document.getElementById("detalle").style.display = "block";
+
+    // llenar datos
+    document.getElementById("detalle-img").src = img;
+    document.getElementById("detalle-categoria").textContent = categoria;
+    document.getElementById("detalle-titulo").textContent = titulo;
+    document.getElementById("detalle-precio").textContent = precio;
+    document.getElementById("detalle-desc").innerHTML = descripcion;
+
+
+    // WhatsApp dinámico
+    let mensaje = `Hola, quiero información sobre: ${titulo} (${precio})`;
+    let url = `https://wa.me/51997468890?text=${encodeURIComponent(mensaje)}`;
+
+    document.getElementById("btn-whatsapp").href = url;
+}
+</script>
+
+</body>
+</html>
